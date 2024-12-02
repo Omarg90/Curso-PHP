@@ -14,6 +14,29 @@ class Alumnos {
         $this->edad = $edad;
         $this->dni = $dni;
     }
+
+    /*El desctructor no podemos invocarlo, se invoca solo
+    * no recibe parametros ni devuelve nada
+    */
+    
+    public function __destruct()
+    {
+        echo "Se ha eliminado el objeto";
+    }
+    function verListadoAlumnos($alumnos) {
+        if (empty($alumnos)) {
+            echo "No hay alumnos en el listado.<br>";
+            return;
+        }
+    
+        foreach ($alumnos as $alumno) {
+            echo "Nombre: " . $alumno->nombre . "<br>";
+            echo "Edad: " . $alumno->edad . "<br>";
+            echo "DNI: " . $alumno->dni . "<br>";
+            echo "--------------------<br>";
+        }
+    }
+
 }
 
 // Función para mostrar el listado de alumnos
