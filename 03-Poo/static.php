@@ -6,8 +6,8 @@ por lo cual no necesitas crear un objeto para acceder a ella.
 Se comparte con todos los objetos.
 */
 class Familiar{
-    public $nombre;
-    public $edad;
+    public string $nombre;
+    public int $edad;
 
     public static $numFamiliares = 0;
     public static $familiar = [];
