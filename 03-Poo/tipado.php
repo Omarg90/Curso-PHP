@@ -7,6 +7,10 @@ que vamos a utlizar, al igual que como parametros de una funcion tambien
 se puede definir el tipo
 */
 
+//Para un tipado estricto debemos hacer uso de stric_types
+
+declare(strict_types=1);
+
 class Familiarr{
 
     //definimos los tipos de variables de las clases.
