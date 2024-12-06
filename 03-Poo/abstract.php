@@ -39,10 +39,14 @@ class Beer extends Product{
     }
 
 }
-
+//Creamos una funcion fuera de la clase y accedemos a la funcion calcular precio.
+function showInfo(Product $product){
+    echo "$" . $product->calculatePrice();
+}
 $dorada = new Beer("Dorada", 2.50);
 echo $dorada->getName();
 echo $dorada->calculatePrice();
 
+showInfo($dorada);
 //no podemos acceder al nombre porque esta protegido, por hacemos antes el uso de getName
 echo $dorada->name;
