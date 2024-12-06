@@ -49,4 +49,4 @@ echo $dorada->calculatePrice();
 
 showInfo($dorada);
 //no podemos acceder al nombre porque esta protegido, por hacemos antes el uso de getName
-echo $dorada->name;
+//echo $dorada->name;
