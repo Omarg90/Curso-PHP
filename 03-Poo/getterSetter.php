@@ -45,6 +45,7 @@ class Asignatura
 
     public function setNombre($nombre)
     {
+        //Dentro del set podriamos poner validaciones.
         $this->nombre = $nombre;
     }
 
